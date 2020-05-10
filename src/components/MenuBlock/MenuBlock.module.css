@@ -1,0 +1,7 @@
+.menuBlock {
+    float: left;
+    width: 250px;
+    height: 860px;
+    background-color: rgba(179, 195, 226, 0.644);
+    border-right: 1px solid black;
+}

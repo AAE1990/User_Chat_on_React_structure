@@ -1,0 +1,35 @@
+.inputBlock {
+    float: left;
+    width: 500px;
+    height: 830px;
+    margin-left: 0px;
+    margin-top: 0px;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+}
+
+.showMessage {
+    float: left;
+    overflow-y: scroll;
+    width: 490px;
+    height: 760px;
+    padding-left: 5px;
+    line-height: 23px;
+    border: rgb(111, 139, 182) solid 2px;
+}
+
+.messageElements {
+    float: left;
+    text-indent: 10px;
+    font-weight: bold;
+}
+.messageElementsTwo {
+    float: left;
+    text-indent: 10px;
+}
+
+.messageElementsThree {
+    float: right;
+    position: static;
+    padding-right: 0px;
+}

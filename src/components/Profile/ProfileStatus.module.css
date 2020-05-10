@@ -1,0 +1,24 @@
+.statusBlock {
+    width: 250px;
+    height: 30px;
+    background-color: cadetblue;
+    border-bottom: solid 1px black;
+}
+
+.statusDesign {
+    text-indent: 10px;
+    padding-top: 0px;
+}
+
+.statusInput {
+    float: right;
+}
+
+.statusInputDown {
+    float: right;
+    width: auto;
+    height: 27px;
+    padding-right: 10px;
+    border: rgb(114, 114, 114) dashed 1px;
+    cursor: pointer;
+}
