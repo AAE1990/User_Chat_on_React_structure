@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
 import InputWorkingChat from "./InputWorkingChat";
-import { workingChatCreator, deleteMessageCreatorTWo, /* updateInputCreator */ } from "../../../redux/workingChat-reducer";
+import { workingChatCreator, deleteMessageCreatorTWo } from "../../../redux/workingChat-reducer";
 
 const mapStateToProps = (state) => {
     return {
@@ -17,9 +17,6 @@ const mapDispatchToProps = (dispatch) => {
         deleteMessageTwo: (newTextMessageTwo) => {
             dispatch(deleteMessageCreatorTWo(newTextMessageTwo));
         },
-        /* updateInput: (newTextMessageTwo) => {
-            dispatch(updateInputCreator(newTextMessageTwo));
-        } */
     }
  }
 

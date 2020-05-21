@@ -5,6 +5,7 @@ import HeadersUsers from './components/Headers/HeadersUsers';
 import FloodChatContainer from './components/Chats/FloodChat/FloodChatContainer';
 import WorkingChatContainer from './components/Chats/WorkingChat/WorkingChatContainer';
 import UsersContainer from './components/Users/UsersContainer';
+import Footer from './components/Footer/Footer';
 
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
         <FloodChatContainer />
         <WorkingChatContainer />
         <UsersContainer />
+        <Footer />
       </div>
     </div>
   )

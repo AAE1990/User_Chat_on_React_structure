@@ -17,10 +17,6 @@ const MessageFloodChat = (props) => {
         props.deleteMessage(values.newTextMessage)
     }
 
-/*     let onUpdateInput = (values) => {
-        props.updateInput(values.newTextMessage)
-    } */
-
     return (
         <div className={style.inputBlock}>
             <div className={style.showMessage} >
@@ -29,7 +25,7 @@ const MessageFloodChat = (props) => {
                 <span className={style.messageElementsTwo} > {windowMessagesElements} </span>
                 <span className={style.messageElementsThree} > <button onClick={onDeleteMessage}>Отчистить</button> </span>
             </div>
-            <AddMessgaeChat onSubmit={onAddMessage} /* onChange={onUpdateInput} */ />
+            <AddMessgaeChat onSubmit={onAddMessage} />
         </div>
     )
 }

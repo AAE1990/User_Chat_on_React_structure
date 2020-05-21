@@ -17,19 +17,15 @@ const InputWorkingChat = (props) => {
         props.deleteMessageTwo(valuesTwo.newTextMessageTwo)
     }
 
-/*     let onUpdateInput = (values) => {
-        props.updateInput(values.newTextMessageTwo)
-    } */
-
     return (
         <div className={style.inputBlock}>
             <div className={style.showMessage} >
-                <span className={style.messageElements}> {state.myMessageMarker.workingChat}
-                    {state.myMessageMarker.name} </span>
+                <span className={style.messageElements}> {state.myMessageMarkerTwo.workingChat}
+                    {state.myMessageMarkerTwo.name} </span>
                 <span className={style.messageElementsTwo} > {windowMessagesElementsTwo} </span>
                 <span className={style.messageElementsThree} > <button onClick={onDeleteMessageTwo}>Отчистить</button> </span>
             </div>
-            <AddMessageChateTwo onSubmit={onAddMessageTwo} /* onChange={onUpdateInput} */ />
+            <AddMessageChateTwo onSubmit={onAddMessageTwo} />
         </div>
     )
 }

@@ -1,7 +1,6 @@
 const ADD_TEXT_MESSAGE = 'ADD_TEXT_MESSAGE';
 const MY_MESSAGE_MARKER = 'MY_MESSAGE_MARKER';
 const DELETE_MESSAGE = 'DELETE_MESSAGE';
-//const UPDATE_INPUT = 'UPDATE_INPUT';
 
 let initialState = {
     windowMessage: [{ message: '' }],
@@ -29,12 +28,6 @@ const floodChatReducer = (state = initialState, action) => {
                 windowMessage: state.windowMessage.filter(m => m.id !== action.newTextMessage)
             }
         }
-/*         case UPDATE_INPUT: {
-            return {
-                ...state,
-                newTextMessage: ""
-            }
-        } */
         default:
             return state;
     }
@@ -42,6 +35,5 @@ const floodChatReducer = (state = initialState, action) => {
 
 export const floodChatCreator = (newTextMessage) => ({ type: ADD_TEXT_MESSAGE, newTextMessage });
 export const deleteMessageCreator = (newTextMessage) => ({ type: DELETE_MESSAGE, newTextMessage});
-//export const updateInputCreator = (newTextMessage) => ({ type: UPDATE_INPUT, newTextMessage });
 
 export default floodChatReducer;

@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
 import InputFloodChat from "./InputFloodChat";
-import { floodChatCreator, deleteMessageCreator, /* updateInputCreator */ } from "../../../redux/floodChat-reduser";
+import { floodChatCreator, deleteMessageCreator} from "../../../redux/floodChat-reduser";
 
 const mapStateToProps = (state) => {
     return {
@@ -16,10 +16,7 @@ const mapDispatchToProps = (dispatch) => {
         },
         deleteMessage: (newTextMessage) => {
             dispatch(deleteMessageCreator(newTextMessage));
-        },
-        /* updateInput: (newTextMessage) => {
-            dispatch(updateInputCreator(newTextMessage));
-        } */
+        } 
     }
  }
 
